@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        form {
+            text-align: center;
+            padding-top: 100px;
+          }
+    </style>
+</head>
+
+<body>
+<br>
+
+
+<form action="/analyze" method="post">{% csrf_token %}
+<div>
+    <h5>Hello, this is a simple calculator developed by Kowshik N</h5>
+    <br>
+    <h6> Enter the numbers:</h6>
+    <br>
+    Enter the 1st input : <input type="text" name="num1" placeholder="Please enter a number"><br><br>
+    Enter the 2nd input : <input type="text" name="num2" placeholder="Please enter a number"><br><br>
+    
+    <button type="submit" class="btn btn-outline-primary" onclick="">Submit</button>
+
+</div>
+
+</form>
+</body>
+</html>
